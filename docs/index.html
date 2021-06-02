@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Content Based Singing Voice Extraction From a Musical Mixture</title>
+        <!-- <link rel="stylesheet" type="text/css" href="../../css/blog-web.css" media="all"> -->
+        <!-- <head> -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <style type="text/css">
+    audio { width: 200px; }
+    html {
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    height: 100%;
+}
+    </style>
+    <!-- </head> -->
+    </head>
+    <body>
+    <center>
+    <div id="blog-wrapper">
+      <div id="blog-content">
+          <h2>Audio Examples of paper: A Framework For Analysis And Synthesis Of Unison (ISMIR 2020)</h2>
+          <h3>Pritish Chandna, Helena Cuesta, Merlijn Blaauw, Emilia Gómez</h3>
+          <h3>Music Technology Group, Universitat Pompeu Fabra, Barcelona</h3>
+    </center>
+
+
+
+  <h4>Ssolo To Unison Examples.</h4>
+<!--   <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p> -->
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Soprano</b></td>
+    <td width="150px"><b>Alto</b></td>
+    <td width="150px"><b>Tenor</b></td>
+    <td width="150px"><b>Bass</b></td>
+
+
+
+  </tr>
+  <tr>
+    <td><b>Input Solo Voice</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="STU/csd_soprano4_NinoDios_7_ori.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_alto4_ElRossinyol_0_ori.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_tenor1_ElRossinyol_1_ori.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="STU/csd_bass1_NinoDios_8_ori.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <table>
+
+  <tr>
+    <td width="165px"><b>Unison 4 Singers, 0.5 cents pitch deviation, 8ms timing deviation</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="STU/csd_soprano4_NinoDios_7_0.5_4_unison.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_alto4_ElRossinyol_0_0.5_4_unison.wav"  type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_tenor1_ElRossinyol_1_0.5_4_unison.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="STU/csd_bass1_NinoDios_8_0.5_4_unison.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+  </tr>
+
+  <tr>
+    <td width="165px"><b>Unison 4 Singers, no Timbre change, 0.5 cents pitch deviation, 8ms timing deviation</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="STU/csd_soprano4_NinoDios_7_0.5_4_5_unison_notimbre.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_alto4_ElRossinyol_0_0.5_4_5_unison_notimbre.wav"  type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_tenor1_ElRossinyol_1_0.5_4_5_unison_notimbre.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="STU/csd_bass1_NinoDios_8_0.5_4_5_unison_notimbre.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+  </tr>
+
+  <tr>
+    <td width="165px"><b>Unison 4 Singers, 0.5 cents pitch deviation, 0ms timing deviation</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="STU/csd_soprano4_NinoDios_7_0.2_4_0_unison.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_alto4_ElRossinyol_0_0.2_4_0_unison.wav"  type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="STU/csd_tenor1_ElRossinyol_1_0.2_4_0_unison.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="STU/csd_bass1_NinoDios_8_0.2_4_5_unison.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+  </tr>
+
+</table>
+
+  <h4>Unison To Solo Examples.</h4>
+<!--   <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p> -->
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Soprano</b></td>
+    <td width="150px"><b>Alto</b></td>
+    <td width="150px"><b>Tenor</b></td>
+    <td width="150px"><b>Bass</b></td>
+
+
+
+  </tr>
+  <tr>
+    <td><b>Input Unison</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="UTS/ND_4_sop.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_alt.mp3" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_ten.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_bas.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <table>
+
+  <tr>
+    <td width="165px"><b>Output Solo Voice</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="UTS/ND_4_sop_SIN.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_alt_SIN.mp3" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_ten_SIN.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="UTS/ND_4_bas_SIN.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+  </tr>
+
+</table>
+
+
+
+          <p>[1] Stoller, Daniel, Sebastian Ewert, and Simon Dixon. "Wave-u-net: A multi-scale neural network for end-to-end audio source separation." arXiv preprint arXiv:1806.03185 (2018).</p>
+          <p>[2] Jansson, Andreas, et al. "Singing voice separation with deep U-Net convolutional networks." (2017).</p>
+          <p>[3] Chandna, Pritish, et al. "A Vocoder Based Method for Singing Voice Extraction." ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). IEEE, 2019.</p>
+          <p>[4] Bittner, Rachel M., et al. "Medleydb: A multitrack dataset for annotation-intensive mir research." ISMIR. Vol. 14. 2014.</p>
+      </div>
+      
+      <div id="blog-bg-footer">
+        <div id="blog-footer">
+          <p>
+            Last updated:&nbsp;
+            <script language="JavaScript">
+            document.write(String(document.lastModified))</script>
+          </p>
+        </div>
+      </div>
+    </div>
+    </body>
