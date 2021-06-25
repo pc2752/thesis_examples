@@ -28,10 +28,792 @@
 
 
 
+  <h4>Examples pertaining to Chapter 5.</h4>
+<!--   <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p> -->
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>The original mixture file</b></td>
+    <td width="150px"><b>The original vocals file</b></td>
+    <td width="150px"><b> Vocals separated using DeepConvSep [1]</b></td>
+    <td width="150px"><b>Vocals separated/synthesised using the new model, with f0 predicted by Melodia [2].</b></td>
+    <td width="150px"><b>Vocals syntheiszed using the new model, with f0 predicted by the proposed model.</b></td>
 
 
+  </tr>
+  <tr>
+    <td><b>Input Solo Voice</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/ss_synth/45415_verse_mixture.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
 
-  <h4>Ssolo To Unison Examples.</h4>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/ss_synth/45415_verse_original_vocals.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/ss_synth/45415_verse-voice_deepconvsep_ikala.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/ss_synth/45415_verse_synth_orif0.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/ss_synth/45415_verse_synth_predf0.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <h4>Examples pertaining to Chapter 6.</h4>
+ <h4>Examples From NUS-48E [1] Validation Set (The singers are non-native English Speakers)</h4>
+  <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p>
+
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Original Vocals, Re-synthesized using WORLD vocoder</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss</b></td>
+    <td width="150px"><b>Vocals Synthesized Using NPSS [2,3] Model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model Without L1 Loss</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss, With Voice Change</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss, With Voice and Gender Change</b></td>
+
+    
+
+  </tr>
+  <tr>
+    <td><b>Male Singing Voice</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sing_synth_examples/audio/ori_male.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_l1_male.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/npss_male.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_solo_male.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_vc_male.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_vc_m_f.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Original Vocals, Re-synthesized using WORLD vocoder</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss</b></td>
+    <td width="150px"><b>Vocals Synthesized Using NPSS [2,3] Model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model Without L1 Loss</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss, With Voice Change</b></td>
+    <td width="150px"><b>Vocals Synthesized Using WGANSing Model With L1 Loss, With Voice and Gender Change</b></td>
+    
+
+  </tr>
+  <tr>
+    <td><b>Female Singing Voice</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sing_synth_examples/audio/ori_female.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_l1_female.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/npss_female.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_solo_female.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_vc_female.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sing_synth_examples/audio/g_vc_f_m.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+
+  <h4>Examples pertaining to Chapter 7.</h4>
+
+<h4>Examples for unison choir singing. The songs and singers singers shown here were not used for the training.</h4>
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Unison Mixture</b></td>
+    <td width="150px"><b>Single voice synthesized by SCM model</b></td>
+  </tr>
+    <tr>
+    <td><b>Example 1 (2 singers in unison)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/uni.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/uni_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+ </table>
+  <table>
+    <tr>
+    <td width="165px"><b>Example 2 (3 singers in unison)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/uni_3.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/uni_3_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+ </table>
+
+
+  <table>
+    <tr>
+    <td width="165px"><b>Example 3 (3 singers in unison)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/nino_alto_1_3singers.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/nino_alto_1_3singers_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+ </table>
+
+   <table>
+    <tr>
+    <td width="165px"><b>Example 4 (4 singers in unison)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/nino_alto_1_4singers.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/nino_alto_1_4singers_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+ </table>
+
+   <h4>Examples for vocal effects removal, on real world examples.</h4>
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Vocals with Effects</b></td>
+    <td width="150px"><b>Clean Voice synthesized With SCM Model</b></td>
+  </tr>
+    <tr>
+    <td><b>Example 1 (Reverb)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/jack_rev.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/jack_rev_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+  </tr>
+
+ </table>
+  <table>
+    <tr>
+    <td width="165px"><b>Example 2 (Growling)</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/Opeth.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Opeth.wav_vocals_output.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+ </table>
+
+ </table>
+
+
+  <h4>Examples from proprietary dataset. The songs and singers singers shown here were not used for the training.</h4>
+<!--   <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p> -->
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Mixture of vocals and backing track</b></td>
+    <td width="150px"><b>Vocals output by Wave-U-Net[1]</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SDN model, with the target singer set to one of the singers in the training set with the same gender.</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SIN model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SS[2] model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the UNET[3]model</b></td>
+
+
+  </tr>
+  <tr>
+    <td><b>Example 1</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_wave.wav" type="audio/wav">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AintNoSunshine_Mix_1_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <table>
+
+  <tr>
+    <td width="165px"><b>Example 2</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_wave.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/FlyMeToTheMoon_Mix_1_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 3</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_wave.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Imagine_Mix_1_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 4</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_wave.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/Lithium_Mix_1_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+</table>
+
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 5</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_wave.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/SevenNationArmy_Mix_2_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+</table>
+
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 6</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_mix.wav" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_wave.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_scs.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_scm.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_ss.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/UnderTheBridge_Mix_8_mask.wav" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+</table>
+
+  <h4>Examples from MedleyDB [4]. The songs and singers singers shown here were not used for the training.</h4>
+
+  <table>
+
+  <tr>
+    <td width="165px" style="padding-bottom: 40px;"></td>
+    <td width="150px"><b>Mixture of vocals and backing track</b></td>
+    <td width="150px"><b>Original Vocals, Re-synthesized using WORLD vocoder</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SDN model, with the target singer set to one of the singers in the training set with the same gender.</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SIN model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the SS model</b></td>
+    <td width="150px"><b>Vocals Synthesized Using the UNET model</b></td>
+
+
+  </tr>
+  <tr>
+    <td><b>Example 1</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_mix_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_ori_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_scs_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_scm_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_ss_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/AimeeNorwich_Child_mask_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <table>
+
+  <tr>
+    <td width="165px"><b>Example 2</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_mix_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_ori_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_scs_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_scm_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_ss_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/BrandonWebster_DontHearAThing_mask_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 3</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_mix_2.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_ori_2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_scs_2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_scm_2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_ss_2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/HezekiahJones_BorrowedHeart_mask_2.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+
+<table>
+
+  <tr>
+    <td width="165px"><b>Example 4</b></td>
+    <td>
+  <audio controls preload="none" >
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_mix_1.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_ori_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+    <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_scs_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_scm_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_ss_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+   <td>
+  <audio controls preload="none">
+  <source src="thesis_examples_pages/sep_content/docs/audio/MusicDelta_Gospel_mask_1.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+  </audio>
+    </td>
+  </tr>
+
+</table>
+
+  <h4>Solo To Unison Examples.</h4>
 <!--   <p> These are examples from the NUS-48E [1] dataset, on which the system was trained and evaluated</p> -->
 
   <table>
